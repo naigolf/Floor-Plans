@@ -14,14 +14,6 @@ var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
 
-
-var background = new Image();
-background.src = "http://www.samskirrow.com/background.png";
-
-// Make sure the image is loaded first otherwise nothing will draw.
-background.onload = function(){
-    ctx.drawImage(background,0,0);   
-}
 ctx.fillStyle = "#FF0000";
 ctx.fillRect(0,0,20,20);
 </script>
