@@ -3,6 +3,7 @@
 <body>
 
 <canvas id="myCanvas" width="640" height="480"
+context.fillStyle = "url('
 <body background="https://www.aureastation.com/wp-content/uploads/2019/01/AureaStation_Floorplan_B3-600x469.jpg">
 style="border:1px solid #c3c3c3;">
 Your browser does not support the canvas element.
@@ -11,6 +12,17 @@ Your browser does not support the canvas element.
 <script>
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
+canvas.width = 903;
+canvas.height = 657;
+
+
+var background = new Image();
+background.src = "http://www.samskirrow.com/background.png";
+
+// Make sure the image is loaded first otherwise nothing will draw.
+background.onload = function(){
+    ctx.drawImage(background,0,0);   
+}
 ctx.fillStyle = "#FF0000";
 ctx.fillRect(0,0,20,20);
 </script>
