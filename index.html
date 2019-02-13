@@ -2,24 +2,24 @@
 <html>
 <body>
 
-<img id="scream" width="640" height="480" src="https://encrypted-tbn0.gstatic.com/images…" alt="The Scream">
-
-  
-<canvas id="myCanvas" width="640" height="480"
-style="border:1px solid #c3c3c3;">
-Your browser does not support the canvas element.
+<canvas id="myCanvas" width="800" height="605" style="border:1px solid #d3d3d3;">
+<img src="https://www.roomsketcher.com/wp-content/uploads/2017/11/RoomSketcher-Order-Floor-Plans-2D-Floor-Plan.jpg" id="scream">
 </canvas>
 
-
 <script>
-var canvas = document.getElementById("myCanvas");
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
 var img = document.getElementById("scream");
-var ctx = canvas.getContext("2d");
+   ctx.drawImage(img, 0, 0);
+// Red rectangle
+ctx.beginPath();
+ctx.lineWidth = "6";
 ctx.fillStyle = "#FF0000";
-ctx.fillRect(10,10,20,20);
-ctx.drawImage(img, 50, 10);
+//ctx.strokeStyle = "red";
+ctx.fillRect(200, 50, 15, 15);  
+ctx.stroke();
 
-</script>
+</script> 
 
 </body>
 </html>
