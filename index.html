@@ -17,7 +17,10 @@ window.onload = function() {
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 var img = document.getElementById("scream");
-
+  
+canvas.width  = window.innerWidth;
+canvas.height = window.innerHeight;
+  
 ctx.drawImage(img, 0, 0);
 ctx.shadowBlur = 10;
 ctx.shadowColor = "black";
