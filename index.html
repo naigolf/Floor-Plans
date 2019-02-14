@@ -19,7 +19,9 @@ var ctx = c.getContext("2d");
 var img = document.getElementById("scream");
 
 c.width  = window.innerWidth;
-c.height = window.innerHeight;
+c.height = window.innerHeight; 
+  img.width  = window.innerWidth;
+  img.height = window.innerHeight;
   
 ctx.drawImage(img, 0, 0);
 ctx.shadowBlur = 10;
