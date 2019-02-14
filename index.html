@@ -7,7 +7,7 @@
 <canvas 
 id="myCanvas" width="640" height="480" 
 style="border:1px solid #000000;">
-<img src="https://www.roomsketcher.com/wp-content/uploads/2017/11/RoomSketcher-Order-Floor-Plans-2D-Floor-Plan.jpg" id="full-screen-background-image" >
+<img src="https://www.roomsketcher.com/wp-content/uploads/2017/11/RoomSketcher-Order-Floor-Plans-2D-Floor-Plan.jpg" id="canvas" >
 
 </canvas>
 
@@ -16,7 +16,7 @@ style="border:1px solid #000000;">
 window.onload = function() {
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
-var img = document.getElementById("full-screen-background-image");
+var img = document.getElementById("canvas");
   
 canvas.width  = window.innerWidth;
 canvas.height = window.innerHeight;
