@@ -7,7 +7,7 @@
 <canvas 
 id="myCanvas" width="640" height="480" 
 style="border:1px solid #000000;">
-<img  src="https://raw.githubusercontent.com/naigolf/Floor-Plans/master/room.jpg" id="scream" >
+<img  src="https://raw.githubusercontent.com/naigolf/Floor-Plans/master/room.jpg" id="scream" alt="bckgound" class="bg">
 
 </canvas>
 
@@ -32,5 +32,27 @@ ctx.fillRect(200, 50, 15, 15);
 
 </script> 
 
+  
+  img.bg {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1024px){
+    img.bg {
+    left: 50%;
+    margin-left: -512px; }
+}
+  
+  
+  
+  
+  
+  
 </body>
 </html>
