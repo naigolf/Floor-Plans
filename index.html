@@ -2,13 +2,18 @@
 <html>
 <body>
 
+
+
 <canvas 
 id="myCanvas" width="800" height="605" 
 style="border:1px solid #000000;">
 <img src="https://www.roomsketcher.com/wp-content/uploads/2017/11/RoomSketcher-Order-Floor-Plans-2D-Floor-Plan.jpg" id="scream">
+
 </canvas>
-   
+
 <script>
+
+window.onload = function() {
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 var img = document.getElementById("scream");
@@ -19,8 +24,8 @@ ctx.shadowColor = "black";
 
 ctx.fillStyle = "#FF0000";
 ctx.fillRect(200, 50, 15, 15);  
-
-ctx.stroke();
+};
+//ctx.stroke();
 
 </script> 
 
